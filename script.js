@@ -4,6 +4,8 @@ const containerRate = document.querySelector(".container");
 const tyState = document.querySelector(".ty-state");
 const btnSubmit = document.querySelector(".submit");
 const rated = document.querySelector(".rated");
+const alert = document.querySelector(".alert");
+const alertBtn = document.getElementById("alert-btn");
 
 const rateChildren = Array.from(rating.children);
 
@@ -24,7 +26,16 @@ rating.addEventListener("click", function (e) {
 });
 
 btnSubmit.addEventListener("click", function () {
-  containerRate.classList.add("hide");
-  tyState.classList.remove("hide");
-  rated.textContent = `You selected ${selected.id} out of 5`;
+  console.log(selected);
+  if (!selected) {
+    alert.classList.remove("hide-shallow");
+  } else {
+    containerRate.classList.add("hide-strict");
+    tyState.classList.remove("hide-strict");
+    rated.textContent = `You selected ${selected.id} out of 5`;
+  }
+});
+
+alertBtn.addEventListener("click", function () {
+  alert.classList.add("hide-shallow");
 });

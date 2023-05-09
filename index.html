@@ -27,6 +27,13 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
+    <!-- error message -->
+    <div class="alert hide-shallow">
+      <div class="msg-box">
+        <p>Please select a rating</p>
+        <button id="alert-btn">Okay</button>
+      </div>
+    </div>
     <!-- Rating state start -->
 
     <main class="container">
@@ -54,7 +61,7 @@
 
     <!-- Thank you state start -->
 
-    <div class="ty-state hide">
+    <div class="ty-state hide-strict">
       <div class="phone-container">
         <img
           src="images/illustration-thank-you.svg"

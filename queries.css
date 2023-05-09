@@ -1,7 +1,7 @@
 @media (max-width: 24em) {
   .container,
   .ty-state {
-    width: 90vw;
+    width: 95vw;
   }
 
   .rating-container {
@@ -19,5 +19,9 @@
   .rate-selected {
     width: 4.5rem;
     height: 4.5rem;
+  }
+
+  .msg-box {
+    width: 30rem;
   }
 }
