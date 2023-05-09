@@ -1,0 +1,23 @@
+@media (max-width: 24em) {
+  .container,
+  .ty-state {
+    width: 90vw;
+  }
+
+  .rating-container {
+    padding: 0;
+    width: 100%;
+    justify-content: none;
+    gap: 1rem;
+  }
+
+  .rate-btn {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .rate-selected {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
